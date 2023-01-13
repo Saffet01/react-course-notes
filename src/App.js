@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import React, { Component } from 'react';
 import './App.css';
+import Srk from './Srk.js';
 
 // function App() {
 //   return (
@@ -19,11 +20,12 @@ class App extends Component{
     return (
       <div className="App">
         merhaba dünya
-        <h1>2+2</h1>
+        {/* <h1>2+2</h1>
         <h1>{2+2}</h1>
         "saffet".toUpperCase() <br></br>
         {"saffet".toUpperCase()}
-        <h4>{sayi}</h4>
+        <h4>{sayi}</h4> */}
+        <Srk/>
       </div>
     );
   }
