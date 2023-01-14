@@ -15,17 +15,21 @@ import Srk from './Srk.js';
 class App extends Component{
   render(){
 
-    const sayi = 26;
+    // const sayi = 26;
+
+    const title="React Egitimi";
+    const description = "Daha yolun başındayız";
 
     return (
       <div className="App">
-        merhaba dünya
-        {/* <h1>2+2</h1>
+        {/* merhaba dünya
+        <h1>2+2</h1>
         <h1>{2+2}</h1>
         "saffet".toUpperCase() <br></br>
         {"saffet".toUpperCase()}
         <h4>{sayi}</h4> */}
-        <Srk/>
+
+        <Srk baslik={title} aciklama={description}/>
       </div>
     );
   }
