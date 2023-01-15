@@ -7,7 +7,7 @@ class Arakatman extends Component {
       <div>
         {
             this.props.dizim.map(dizim => 
-                <Srk name={dizim.name} lastName={dizim.lastName}/>
+                <Srk key={dizim.id} name={dizim.name} lastName={dizim.lastName}/>
                 )
         }
       </div>

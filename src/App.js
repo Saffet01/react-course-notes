@@ -18,14 +18,17 @@ class App extends Component{
 
     // const sayi = 26;
     const dizim = [{
+      id:1,
       name :"hiper",
       lastName: "React"
     },
     {
+      id:2,
       name :"süper",
       lastName: "React Öğrenmek"
     },
     {
+      id:3,
       name :"hiper süper",
       lastName: "React'in kendisi"
     }
