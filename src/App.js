@@ -25,6 +25,15 @@ class App extends Component{
   addNews(){
     console.log("Eklendi!");
   }
+
+  changeName(){
+    this.setState(
+      {
+        name:"Ramazan"
+      }
+    )
+  }
+
   render(){
 
     // const sayi = 26;
@@ -63,6 +72,7 @@ class App extends Component{
         <Srk isim={dizim[2].name} soyisim={dizim[2].lastName}/> */}
 
         <h1>{this.state.name}</h1>
+        <button onClick={this.changeName.bind(this)}>Değiştir</button>
 
         <Arakatman dizim={dizim} addNews={this.addNews}/>
 
