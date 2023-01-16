@@ -14,6 +14,17 @@ import Arakatman from './Arakatman';
 
 // fonksiyonu class'a çevirerek de kullanabiliriz bu yapıyı
 class App extends Component{
+
+  constructor(props){
+    super(props);
+    this.state = {
+      name: "Srk"
+    }
+  }
+
+  addNews(){
+    console.log("Eklendi!");
+  }
   render(){
 
     // const sayi = 26;
@@ -51,7 +62,9 @@ class App extends Component{
         <Srk isim={dizim[1].name} soyisim={dizim[1].lastName}/>
         <Srk isim={dizim[2].name} soyisim={dizim[2].lastName}/> */}
 
-        <Arakatman dizim={dizim}/>
+        <h1>{this.state.name}</h1>
+
+        <Arakatman dizim={dizim} addNews={this.addNews}/>
 
       </div>
     );
